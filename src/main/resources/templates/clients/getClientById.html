@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>client by id</title>
+</head>
+<body>
+
+<p th:text="${client.getId()}">VALUE</p>
+<p th:text="${client.getName() + ' ' + client.getSurname()}">VALUE</p>
+<p th:text="'passport: ' + ${client.getPassportId()}">VALUE</p>
+
+</body>
+</html>

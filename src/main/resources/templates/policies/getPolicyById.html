@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>policy by id</title>
+</head>
+<body>
+
+<p th:text="'Policy #' + ${policy.getIPolicyid()}">VALUE</p>
+<p th:text="'Client: id#' + ${policy.getClient().getId() + ' ' + policy.getClient().getName() + ' ' + policy.getClient().getSurname()}">VALUE</p>
+<p th:text=" 'passport ID ' + ${policy.getClient().getPassportid()}">VALUE</p>
+<p th:text="'insures ' + ${policy.getProperty() + ' with coverage ' + policy.getCoverage().toString()}">VALUE</p>
+<p th:text="'Price: ' + ${policy.getPrice()}">VALUE</p>
+
+</body>
+</html>
